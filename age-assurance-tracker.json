@@ -3,11 +3,11 @@
   "title": "Age Assurance Policy Tracker",
   "status": "Draft (not for citation)",
   "compiled": "OxCTP",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "source": "OxCART Google Sheet",
-  "nRegimes": 185,
+  "nRegimes": 184,
   "nVariables": 66,
-  "nCodedCells": 2303
+  "nCodedCells": 2296
  },
  "categories": [
   "Overview",
@@ -203,7 +203,7 @@
   "First Date of Effect": {
    "definition": "When mandate first goes/went into effect",
    "type": "Date",
-   "values": "Date, Not specified",
+   "values": "Date, Not applicable",
    "notes": ""
   },
   "Link": {
@@ -219,10 +219,10 @@
    "notes": ""
   },
   "Extraterritorial claim": {
-   "definition": "Whether the mandate binds services without business in the territory",
+   "definition": "Whether the mandate binds services based outside their territory",
    "type": "Categorical",
    "values": "Global, Territorial, Not specified",
-   "notes": "Whether platforms specify that the platforms must be doing business in the relevant territory"
+   "notes": "Whether the mandate includes only companies based in their territory"
   },
   "Coverage Basis": {
    "definition": "Criteria entities are included in mandate",
@@ -282,7 +282,7 @@
    "definition": "Over/under age for access to content/services",
    "type": "Numeric",
    "values": "Age, Not specified",
-   "notes": ""
+   "notes": "Primary refers to the age at which the most restrictive element of the mandate is enforced, e.g. 13 years old for a ban for U-13s, while age-apprporiate experiences for U-18s would mean a secondary age is 18."
   },
   "Secondary age threshold(s)": {
    "definition": "Secondary thresholds, if applicable",
@@ -329,7 +329,7 @@
   "Assurance trigger": {
    "definition": "How assurance is triggered",
    "type": "Categorical",
-   "values": "All Accounts, New Accounts, Accounts inferred or known as underage, Accessing restricted content, Not specified",
+   "values": "All Accounts, New Accounts, Accounts inferred or known as underage, Accessing restricted content, Data Collection, Not specified",
    "notes": ""
   },
   "Reverification": {
@@ -366,7 +366,7 @@
    "definition": "Maximum information result can contain",
    "type": "Categorical",
    "values": "Full Identity, DOB, Exact Age, Age Band, Satisfactory Age (boolean), Not specified",
-   "notes": ""
+   "notes": "This is based on any data minimization and method describd. If full ID upload is allowed, for example, Full Identity would be the masimum information result can contain."
   },
   "Result Minimization": {
    "definition": "Whether transmitted/stored age results need to be data-minimized, if applicable",
@@ -423,10 +423,10 @@
    "notes": ""
   },
   "Confidence": {
-   "definition": "How confident the assurance must be (as coded by strength of method x signal)",
+   "definition": "How confident the assurance must be",
    "type": "Categorical",
    "values": "High, Medium, Low, Not specified",
-   "notes": ""
+   "notes": "Combination of strength of method and signal, plus any false positive or mean average error (MAE) referenced. 10% at requisite threshold would be medium false positive rate, 1% would be high."
   },
   "Liveness Check": {
    "definition": "Whether a liveness check must be conducted",
@@ -450,7 +450,7 @@
    "definition": "Accuracy/Specificity requirement for estimation, if applicable",
    "type": "Percentage",
    "values": "0-100%, Not specified, Not applicable",
-   "notes": ""
+   "notes": "Either % of erorr-free estimation, or % true negative"
   },
   "Bases for Inference": {
    "definition": "Types of inference accepted, if applicable",
@@ -459,7 +459,7 @@
    "notes": ""
   },
   "Privacy Guidelines": {
-   "definition": "Whether mandate defines or cites privacy requirements",
+   "definition": "Whether mandate defines or cites privacy requirements for age assurenace",
    "type": "Boolean",
    "values": "Yes/No",
    "notes": ""
@@ -489,7 +489,7 @@
    "notes": ""
   },
   "Security Guidelines": {
-   "definition": "Whether mandate defines or cites security requirements",
+   "definition": "Whether mandate defines or cites security requirements for age assurance",
    "type": "Boolean",
    "values": "Yes/No",
    "notes": ""
@@ -566,7 +566,7 @@
     "Date Enacted": "2020-12-23",
     "First Date of Effect": "2021-01-01",
     "Jurisdiction": "National",
-    "Extraterritorial claim": "Territorial",
+    "Extraterritorial claim": "Global",
     "Coverage Basis": "Type of Content/Services",
     "Proportionality": "Risk",
     "Covered Platforms": "Not applicable",
@@ -10368,91 +10368,8 @@
    }
   },
   {
-   "id": "united-states-kids-off-social-media-act",
-   "row": 105,
-   "name": "Kids Off Social Media Act",
-   "country": "United States",
-   "iso": "us",
-   "base": "United States",
-   "region": "North America",
-   "subnational": null,
-   "values": {
-    "Name": "Kids Off Social Media Act",
-    "Country": "United States",
-    "Link": "https://www.govinfo.gov/app/details/BILLS-119s278rs",
-    "Status": "Proposed",
-    "Originator": "Legislature",
-    "Primary Type": "Social media ban",
-    "Duty Standard": null,
-    "Guidance requirements": "No",
-    "Guidance Links": null,
-    "Date Enacted": null,
-    "First Date of Effect": null,
-    "Jurisdiction": null,
-    "Extraterritorial claim": null,
-    "Coverage Basis": null,
-    "Proportionality": null,
-    "Covered Platforms": null,
-    "Coverage Exceptions": null,
-    "Coverage Off-Ramp": null,
-    "Coverage Off-Ramp Requirements": null,
-    "AI Provision": null,
-    "Technological Specificity": null,
-    "Assurance Type": null,
-    "Primary age threshold": null,
-    "Secondary age threshold(s)": null,
-    "Threshold type": null,
-    "Assurance Standards": null,
-    "Standard body": null,
-    "Age Unknown treatment": null,
-    "Guest Accounts Allowed": null,
-    "Reusable Age Credential": null,
-    "Assurance trigger": null,
-    "Reverification": null,
-    "Reverification interval": null,
-    "Point of assurance": null,
-    "Liability allocation": null,
-    "Safe Harbour": null,
-    "Result Type": null,
-    "Result Minimization": null,
-    "Government-issued Signal": null,
-    "Underlying ID Requirement": null,
-    "Third party-issued Signal": null,
-    "Biometric Signal": null,
-    "Digital Credential Signal": null,
-    "Digital Service Signal": null,
-    "Multiple Signals": null,
-    "Excluded Signal": null,
-    "Confidence": null,
-    "Liveness Check": null,
-    "Face Age Estimation": null,
-    "Estimation Buffer": null,
-    "Estimation Accuracy Requirement": null,
-    "Bases for Inference": null,
-    "Privacy Guidelines": null,
-    "Anonymity Requirements": null,
-    "Data Protection Requirement": null,
-    "Appeal Process": null,
-    "Zero-Knowledge Requirement": null,
-    "Security Guidelines": null,
-    "Breach Notification": null,
-    "Third-Party Accredidation": null,
-    "Data Retention Limit": null,
-    "Enforcement Body": null,
-    "Private Right of Action": null,
-    "Evidence of Enforcement": null,
-    "Litigation": null,
-    "Penalty Types": null
-   },
-   "sources": {
-    "Link": [
-     "https://www.govinfo.gov/app/details/BILLS-119s278rs"
-    ]
-   }
-  },
-  {
    "id": "united-states-screen-act",
-   "row": 106,
+   "row": 105,
    "name": "SCREEN Act",
    "country": "United States",
    "iso": "us",
@@ -10462,7 +10379,7 @@
    "values": {
     "Name": "SCREEN Act",
     "Country": "United States",
-    "Link": "https://www.congress.gov/bill/119th-congress/house-bill/7757/text?s=2&r=1",
+    "Link": "https://www.congress.gov/119/bills/s737/BILLS-119s737is.pdf",
     "Status": "In Committee",
     "Originator": "Legislature",
     "Primary Type": "Mature content ban",
@@ -10529,7 +10446,7 @@
    },
    "sources": {
     "Link": [
-     "https://www.congress.gov/bill/119th-congress/house-bill/7757/text?s=2&r=1"
+     "https://www.congress.gov/119/bills/s737/BILLS-119s737is.pdf"
     ],
     "Guidance Links": [
      "https://www.congress.gov/bill/119th-congress/house-bill/7757/text?s=2&r=1"
@@ -10538,7 +10455,7 @@
   },
   {
    "id": "united-states-alabama-alabama-attorney-g",
-   "row": 107,
+   "row": 106,
    "name": "Alabama Attorney General Roblox Settlement",
    "country": "United States (Alabama)",
    "iso": "us",
@@ -10624,7 +10541,7 @@
   },
   {
    "id": "united-states-alabama-hb-164-2024",
-   "row": 108,
+   "row": 107,
    "name": "HB 164 (2024)",
    "country": "United States (Alabama)",
    "iso": "us",
@@ -10710,7 +10627,7 @@
   },
   {
    "id": "united-states-alabama-hb-161-2026",
-   "row": 109,
+   "row": 108,
    "name": "HB 161 (2026)",
    "country": "United States (Alabama)",
    "iso": "us",
@@ -10796,7 +10713,7 @@
   },
   {
    "id": "united-states-arizona-hb-2112",
-   "row": 110,
+   "row": 109,
    "name": "HB 2112",
    "country": "United States (Arizona)",
    "iso": "us",
@@ -10882,7 +10799,7 @@
   },
   {
    "id": "united-states-arkansas-act-900",
-   "row": 111,
+   "row": 110,
    "name": "Act 900",
    "country": "United States (Arkansas)",
    "iso": "us",
@@ -10968,7 +10885,7 @@
   },
   {
    "id": "united-states-arkansas-act-689",
-   "row": 112,
+   "row": 111,
    "name": "Act 689",
    "country": "United States (Arkansas)",
    "iso": "us",
@@ -11054,7 +10971,7 @@
   },
   {
    "id": "united-states-arkansas-act-612",
-   "row": 113,
+   "row": 112,
    "name": "Act 612",
    "country": "United States (Arkansas)",
    "iso": "us",
@@ -11140,7 +11057,7 @@
   },
   {
    "id": "united-states-california-california-age",
-   "row": 114,
+   "row": 113,
    "name": "California Age-Appropriate Design Code Act (AAB2273)",
    "country": "United States (California)",
    "iso": "us",
@@ -11226,7 +11143,7 @@
   },
   {
    "id": "united-states-california-ab-1709-2026-co",
-   "row": 115,
+   "row": 114,
    "name": "AB 1709 (2026), Covered platforms: age restriction: e-Safety Advisory Commission",
    "country": "United States (California)",
    "iso": "us",
@@ -11313,7 +11230,7 @@
   },
   {
    "id": "united-states-california-sb-1119-2026-co",
-   "row": 116,
+   "row": 115,
    "name": "SB 1119 (2026), Companion chatbots: children's safety",
    "country": "United States (California)",
    "iso": "us",
@@ -11400,7 +11317,7 @@
   },
   {
    "id": "united-states-california-ab-2246-2026-on",
-   "row": 117,
+   "row": 116,
    "name": "AB 2246 (2026), Online service, product, or feature: access by children",
    "country": "United States (California)",
    "iso": "us",
@@ -11483,7 +11400,7 @@
   },
   {
    "id": "united-states-colorado-conversational-ar",
-   "row": 118,
+   "row": 117,
    "name": "Conversational Artificial Intelligence Service Operator Requirements",
    "country": "United States (Colorado)",
    "iso": "us",
@@ -11569,7 +11486,7 @@
   },
   {
    "id": "united-states-california-digital-age-ass",
-   "row": 119,
+   "row": 118,
    "name": "Digital Age Assurance Act",
    "country": "United States (California)",
    "iso": "us",
@@ -11823,7 +11740,7 @@
   },
   {
    "id": "united-states-california-protecting-our",
-   "row": 120,
+   "row": 119,
    "name": "Protecting Our Kids from Social Media Addiction Act",
    "country": "United States (California)",
    "iso": "us",
@@ -11909,7 +11826,7 @@
   },
   {
    "id": "united-states-connecticut-an-act-concern",
-   "row": 121,
+   "row": 120,
    "name": "An Act Concerning Online Safety",
    "country": "United States (Connecticut)",
    "iso": "us",
@@ -11995,7 +11912,7 @@
   },
   {
    "id": "united-states-colorado-age-attestation-o",
-   "row": 122,
+   "row": 121,
    "name": "Age Attestation on Computing Devices (SB 26-051)",
    "country": "United States (Colorado)",
    "iso": "us",
@@ -12082,7 +11999,7 @@
   },
   {
    "id": "united-states-florida-online-protections",
-   "row": 123,
+   "row": 122,
    "name": "Online Protections for Minors",
    "country": "United States (Florida)",
    "iso": "us",
@@ -12341,7 +12258,7 @@
   },
   {
    "id": "united-states-georgia-protecting-georgia",
-   "row": 124,
+   "row": 123,
    "name": "Protecting Georgia's Children on Social Media Act of 2024",
    "country": "United States (Georgia)",
    "iso": "us",
@@ -12427,7 +12344,7 @@
   },
   {
    "id": "united-states-georgia-sb-540",
-   "row": 125,
+   "row": 124,
    "name": "SB 540",
    "country": "United States (Georgia)",
    "iso": "us",
@@ -12513,7 +12430,7 @@
   },
   {
    "id": "united-states-hawaii-hb-1198",
-   "row": 126,
+   "row": 125,
    "name": "HB 1198",
    "country": "United States (Hawaii)",
    "iso": "us",
@@ -12596,7 +12513,7 @@
   },
   {
    "id": "united-states-hawaii-sb-1542",
-   "row": 127,
+   "row": 126,
    "name": "SB 1542",
    "country": "United States (Hawaii)",
    "iso": "us",
@@ -12679,7 +12596,7 @@
   },
   {
    "id": "united-states-indiana-sb-17-act-17",
-   "row": 128,
+   "row": 127,
    "name": "SB 17 (Act 17)",
    "country": "United States (Indiana)",
    "iso": "us",
@@ -12766,7 +12683,7 @@
   },
   {
    "id": "united-states-indiana-act-1408",
-   "row": 129,
+   "row": 128,
    "name": "Act 1408",
    "country": "United States (Indiana)",
    "iso": "us",
@@ -12853,7 +12770,7 @@
   },
   {
    "id": "united-states-idaho-hb-498",
-   "row": 130,
+   "row": 129,
    "name": "HB 498",
    "country": "United States (Idaho)",
    "iso": "us",
@@ -12936,7 +12853,7 @@
   },
   {
    "id": "united-states-idaho-hb-542-2026",
-   "row": 131,
+   "row": 130,
    "name": "HB 542 (2026)",
    "country": "United States (Idaho)",
    "iso": "us",
@@ -13019,7 +12936,7 @@
   },
   {
    "id": "united-states-iowa-hf-864",
-   "row": 132,
+   "row": 131,
    "name": "HF 864",
    "country": "United States (Iowa)",
    "iso": "us",
@@ -13106,7 +13023,7 @@
   },
   {
    "id": "united-states-illinois-children-s-online",
-   "row": 133,
+   "row": 132,
    "name": "Children's Online Social Media Safety Act (HB 5511)",
    "country": "United States (Illinois)",
    "iso": "us",
@@ -13189,7 +13106,7 @@
   },
   {
    "id": "united-states-kansas-sb-394",
-   "row": 134,
+   "row": 133,
    "name": "SB 394",
    "country": "United States (Kansas)",
    "iso": "us",
@@ -13275,7 +13192,7 @@
   },
   {
    "id": "united-states-kentucky-an-act-relating-t",
-   "row": 135,
+   "row": 134,
    "name": "An act relating to addictive online platforms.",
    "country": "United States (Kentucky)",
    "iso": "us",
@@ -13361,7 +13278,7 @@
   },
   {
    "id": "united-states-kentucky-an-act-relating-t-2",
-   "row": 136,
+   "row": 135,
    "name": "An act relating to the protection of children",
    "country": "United States (Kentucky)",
    "iso": "us",
@@ -13447,7 +13364,7 @@
   },
   {
    "id": "united-states-louisiana-secure-online-ch",
-   "row": 137,
+   "row": 136,
    "name": "Secure Online Child Interaction and Age Limitation Act (Act 456)",
    "country": "United States (Louisiana)",
    "iso": "us",
@@ -13530,7 +13447,7 @@
   },
   {
    "id": "united-states-louisiana-act-440-2023",
-   "row": 138,
+   "row": 137,
    "name": "Act 440 (2023)",
    "country": "United States (Louisiana)",
    "iso": "us",
@@ -13613,7 +13530,7 @@
   },
   {
    "id": "united-states-louisiana-act-481-2025",
-   "row": 139,
+   "row": 138,
    "name": "Act 481 (2025)",
    "country": "United States (Louisiana)",
    "iso": "us",
@@ -13699,7 +13616,7 @@
   },
   {
    "id": "united-states-louisiana-act-216",
-   "row": 140,
+   "row": 139,
    "name": "Act 216",
    "country": "United States (Louisiana)",
    "iso": "us",
@@ -13785,7 +13702,7 @@
   },
   {
    "id": "united-states-massachusetts-an-act-prote",
-   "row": 141,
+   "row": 140,
    "name": "An Act protecting children from addictive social media feeds",
    "country": "United States (Massachusetts)",
    "iso": "us",
@@ -13868,7 +13785,7 @@
   },
   {
    "id": "united-states-mississippi-sb-2346",
-   "row": 142,
+   "row": 141,
    "name": "SB 2346",
    "country": "United States (Mississippi)",
    "iso": "us",
@@ -13954,7 +13871,7 @@
   },
   {
    "id": "united-states-mississippi-walker-montgom",
-   "row": 143,
+   "row": 142,
    "name": "Walker Montgomery Protecting Children Online Act",
    "country": "United States (Mississippi)",
    "iso": "us",
@@ -14037,7 +13954,7 @@
   },
   {
    "id": "united-states-missouri-15-csr-60-18",
-   "row": 144,
+   "row": 143,
    "name": "15 CSR 60-18",
    "country": "United States (Missouri)",
    "iso": "us",
@@ -14123,7 +14040,7 @@
   },
   {
    "id": "united-states-missouri-hb-1839",
-   "row": 145,
+   "row": 144,
    "name": "HB 1839",
    "country": "United States (Missouri)",
    "iso": "us",
@@ -14209,7 +14126,7 @@
   },
   {
    "id": "united-states-minnesota-chapter-111",
-   "row": 146,
+   "row": 145,
    "name": "Chapter 111",
    "country": "United States (Minnesota)",
    "iso": "us",
@@ -14295,7 +14212,7 @@
   },
   {
    "id": "united-states-montana-sb-544",
-   "row": 147,
+   "row": 146,
    "name": "SB 544",
    "country": "United States (Montana)",
    "iso": "us",
@@ -14381,7 +14298,7 @@
   },
   {
    "id": "united-states-nebraska-parental-rights-i",
-   "row": 148,
+   "row": 147,
    "name": "Parental Rights in Social Media Act",
    "country": "United States (Nebraska)",
    "iso": "us",
@@ -14464,7 +14381,7 @@
   },
   {
    "id": "united-states-nebraska-age-appropriate-o",
-   "row": 149,
+   "row": 148,
    "name": "Age-Appropriate Online Design Code Act",
    "country": "United States (Nebraska)",
    "iso": "us",
@@ -14547,7 +14464,7 @@
   },
   {
    "id": "united-states-new-jersey-age-appropriate",
-   "row": 150,
+   "row": 149,
    "name": "Age-Appropriate Design Code (A4015; S3413)",
    "country": "United States (New Jersey)",
    "iso": "us",
@@ -14630,7 +14547,7 @@
   },
   {
    "id": "united-states-new-york-stop-addictive-fe",
-   "row": 151,
+   "row": 150,
    "name": "Stop Addictive Feeds Exploitation (SAFE) for Kids Act",
    "country": "United States (New York)",
    "iso": "us",
@@ -14716,7 +14633,7 @@
   },
   {
    "id": "united-states-new-york-safe-by-design-ac",
-   "row": 152,
+   "row": 151,
    "name": "Safe by Design Act",
    "country": "United States (New York)",
    "iso": "us",
@@ -14804,7 +14721,7 @@
   },
   {
    "id": "united-states-nebraska-online-age-verifi",
-   "row": 153,
+   "row": 152,
    "name": "Online Age Verification Liability Act",
    "country": "United States (Nebraska)",
    "iso": "us",
@@ -14887,7 +14804,7 @@
   },
   {
    "id": "united-states-north-carolina-social-medi",
-   "row": 154,
+   "row": 153,
    "name": "Social Media & AI Safety (HB 301)",
    "country": "United States (North Carolina)",
    "iso": "us",
@@ -14970,7 +14887,7 @@
   },
   {
    "id": "united-states-north-carolina-pornography",
-   "row": 155,
+   "row": 154,
    "name": "Pornography Age Verification Enforcement Act (PAVE Act)",
    "country": "United States (North Carolina)",
    "iso": "us",
@@ -15053,7 +14970,7 @@
   },
   {
    "id": "united-states-north-dakota-sb-2380",
-   "row": 156,
+   "row": 155,
    "name": "SB 2380",
    "country": "United States (North Dakota)",
    "iso": "us",
@@ -15139,7 +15056,7 @@
   },
   {
    "id": "united-states-north-dakota-hb-1561",
-   "row": 157,
+   "row": 156,
    "name": "HB 1561",
    "country": "United States (North Dakota)",
    "iso": "us",
@@ -15225,7 +15142,7 @@
   },
   {
    "id": "united-states-ohio-hb-96",
-   "row": 158,
+   "row": 157,
    "name": "HB 96",
    "country": "United States (Ohio)",
    "iso": "us",
@@ -15311,7 +15228,7 @@
   },
   {
    "id": "united-states-ohio-hb-226",
-   "row": 159,
+   "row": 158,
    "name": "HB 226",
    "country": "United States (Ohio)",
    "iso": "us",
@@ -15394,7 +15311,7 @@
   },
   {
    "id": "united-states-ohio-social-media-parental",
-   "row": 160,
+   "row": 159,
    "name": "Social Media Parental Notification Act",
    "country": "United States (Ohio)",
    "iso": "us",
@@ -15480,7 +15397,7 @@
   },
   {
    "id": "united-states-oklahoma-sb-1959",
-   "row": 161,
+   "row": 160,
    "name": "SB 1959",
    "country": "United States (Oklahoma)",
    "iso": "us",
@@ -15566,7 +15483,7 @@
   },
   {
    "id": "united-states-south-carolina-child-onlin",
-   "row": 162,
+   "row": 161,
    "name": "Child Online Safety Act",
    "country": "United States (South Carolina)",
    "iso": "us",
@@ -15652,7 +15569,7 @@
   },
   {
    "id": "united-states-south-carolina-stop-harm-f",
-   "row": 163,
+   "row": 162,
    "name": "Stop Harm from Addictive Social Media (SHASM) Act",
    "country": "United States (South Carolina)",
    "iso": "us",
@@ -15738,7 +15655,7 @@
   },
   {
    "id": "united-states-south-dakota-hb-1053",
-   "row": 164,
+   "row": 163,
    "name": "HB 1053",
    "country": "United States (South Dakota)",
    "iso": "us",
@@ -15825,7 +15742,7 @@
   },
   {
    "id": "united-states-texas-app-store-accountabi",
-   "row": 165,
+   "row": 164,
    "name": "App Store Accountability Act (S.B. 2420)",
    "country": "United States (Texas)",
    "iso": "us",
@@ -16082,7 +15999,7 @@
   },
   {
    "id": "united-states-texas-securing-children-on",
-   "row": 166,
+   "row": 165,
    "name": "Securing Children Online through Parental Empowerment (SCOPE) Act",
    "country": "United States (Texas)",
    "iso": "us",
@@ -16168,7 +16085,7 @@
   },
   {
    "id": "united-states-texas-hb-1181-free-speech",
-   "row": 167,
+   "row": 166,
    "name": "HB 1181 (Free Speech Coalition v. Paxton)",
    "country": "United States (Texas)",
    "iso": "us",
@@ -16254,7 +16171,7 @@
   },
   {
    "id": "united-states-tennessee-protect-tennesse",
-   "row": 168,
+   "row": 167,
    "name": "Protect Tennessee Minors Act",
    "country": "United States (Tennessee)",
    "iso": "us",
@@ -16340,7 +16257,7 @@
   },
   {
    "id": "united-states-tennessee-protecting-child",
-   "row": 169,
+   "row": 168,
    "name": "Protecting Children from Social Media Act",
    "country": "United States (Tennessee)",
    "iso": "us",
@@ -16423,7 +16340,7 @@
   },
   {
    "id": "united-states-utah-app-store-accountabil",
-   "row": 170,
+   "row": 169,
    "name": "App Store Accountability Act",
    "country": "United States (Utah)",
    "iso": "us",
@@ -16510,7 +16427,7 @@
   },
   {
    "id": "united-states-utah-utah-social-media-reg",
-   "row": 171,
+   "row": 170,
    "name": "Utah Social Media Regulation Act",
    "country": "United States (Utah)",
    "iso": "us",
@@ -16596,7 +16513,7 @@
   },
   {
    "id": "united-states-utah-utah-minor-protection",
-   "row": 172,
+   "row": 171,
    "name": "Utah Minor Protection in Social Media Act",
    "country": "United States (Utah)",
    "iso": "us",
@@ -16682,7 +16599,7 @@
   },
   {
    "id": "united-states-utah-online-pornography-vi",
-   "row": 173,
+   "row": 172,
    "name": "Online Pornography Viewing Age Requirements",
    "country": "United States (Utah)",
    "iso": "us",
@@ -16768,7 +16685,7 @@
   },
   {
    "id": "united-states-vermont-an-act-relating-to",
-   "row": 174,
+   "row": 173,
    "name": "An act relating to an age-appropriate design code",
    "country": "United States (Vermont)",
    "iso": "us",
@@ -16856,7 +16773,7 @@
   },
   {
    "id": "united-states-virginia-sb-854-2025",
-   "row": 175,
+   "row": 174,
    "name": "SB 854 (2025)",
    "country": "United States (Virginia)",
    "iso": "us",
@@ -16942,7 +16859,7 @@
   },
   {
    "id": "united-states-virginia-sb-1515",
-   "row": 176,
+   "row": 175,
    "name": "SB 1515",
    "country": "United States (Virginia)",
    "iso": "us",
@@ -17028,7 +16945,7 @@
   },
   {
    "id": "united-states-west-virginia-hb-4412",
-   "row": 177,
+   "row": 176,
    "name": "HB 4412",
    "country": "United States (West Virginia)",
    "iso": "us",
@@ -17115,7 +17032,7 @@
   },
   {
    "id": "united-states-west-virginia-west-virgini",
-   "row": 178,
+   "row": 177,
    "name": "West Virginia Attorney General Roblox Settlement",
    "country": "United States (West Virginia)",
    "iso": "us",
@@ -17198,7 +17115,7 @@
   },
   {
    "id": "united-states-wyoming-age-verification-f",
-   "row": 179,
+   "row": 178,
    "name": "Age verification for websites with harmful material (HB 43)",
    "country": "United States (Wyoming)",
    "iso": "us",
@@ -17284,7 +17201,7 @@
   },
   {
    "id": "united-states-utah-sb-287",
-   "row": 180,
+   "row": 179,
    "name": "SB 287",
    "country": "United States (Utah)",
    "iso": "us",
@@ -17372,7 +17289,7 @@
   },
   {
    "id": "united-states-virginia-app-store-account",
-   "row": 181,
+   "row": 180,
    "name": "App Store Accountability Act",
    "country": "United States (Virginia)",
    "iso": "us",
@@ -17458,7 +17375,7 @@
   },
   {
    "id": "united-states-meta-and-state-attorneys-g",
-   "row": 182,
+   "row": 181,
    "name": "Meta and State Attorneys General Consent Judgment",
    "country": "United States",
    "iso": "us",
@@ -17544,7 +17461,7 @@
   },
   {
    "id": "united-states-ftc-los-angeles-county-da",
-   "row": 183,
+   "row": 182,
    "name": "FTC & Los Angeles County DA v. NGL Labs",
    "country": "United States",
    "iso": "us",
@@ -17631,7 +17548,7 @@
   },
   {
    "id": "united-states-united-states-v-cognospher",
-   "row": 184,
+   "row": 183,
    "name": "United States v Cognosphere",
    "country": "United States",
    "iso": "us",
@@ -17714,7 +17631,7 @@
   },
   {
    "id": "united-states-16-up-social-media-act",
-   "row": 185,
+   "row": 184,
    "name": "16 & Up Social Media Act",
    "country": "United States",
    "iso": "us",
@@ -17800,7 +17717,7 @@
   },
   {
    "id": "vanuatu-data-protection-and-privacy-act",
-   "row": 186,
+   "row": 185,
    "name": "Data Protection and Privacy Act 13/2024 (Section 7(3))",
    "country": "Vanuatu",
    "iso": "vu",
@@ -17883,7 +17800,7 @@
   },
   {
    "id": "vietnam-cybersecurity-law-116-2025-qh15",
-   "row": 187,
+   "row": 186,
    "name": "Cybersecurity Law 116/2025/QH15 (",
    "country": "Vietnam",
    "iso": "vn",
@@ -17966,7 +17883,7 @@
   },
   {
    "id": "vietnam-decree-147-2024-nd-cp-decision-8",
-   "row": 188,
+   "row": 187,
    "name": "Decree 147/2024/ND-CP + Decision 88/QD-BTTTT",
    "country": "Vietnam",
    "iso": "vn",
